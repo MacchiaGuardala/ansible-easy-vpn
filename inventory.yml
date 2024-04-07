@@ -59,7 +59,7 @@ all:
     #
     # The ad vpntest webserver is disabled by default, you need to navigate to
     # vpn.your_domain.com to set it up.
-    enable_vpntest_webserver: false
+    enable_vpntest_webserver: true
 
     # Set the time at which the system should reboot after installing updates (24H format)
     autoupdate_reboot_time: 03:00
