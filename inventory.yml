@@ -38,9 +38,9 @@ all:
 
     wireguard_port: "51820"
 
-    vpntest_host: "vpn.{{ root_host }}"
+    vpstest_host: "test.{{ root_host }}"
 
-    #vpntest_port: "8080"
+    vpstest_port: "8080"
 
     # Possible choices: cloudflare, quad9, google
     #
@@ -55,11 +55,11 @@ all:
     # adguard.your_domain.com to set it up.
     enable_adguard_unbound_doh: false
 
-    # This will enable vpntest webserver
+    # This will enable vpstest webserver
     #
-    # The ad vpntest webserver is disabled by default, you need to navigate to
-    # vpn.your_domain.com to set it up.
-    enable_vpntest_webserver: true
+    # The ad vpstest webserver is disabled by default, you need to navigate to
+    # vps.your_domain.com to set it up.
+    enable_vpstest_webserver: true
 
     # Set the time at which the system should reboot after installing updates (24H format)
     autoupdate_reboot_time: 03:00

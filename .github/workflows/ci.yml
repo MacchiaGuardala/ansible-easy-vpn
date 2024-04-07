@@ -201,8 +201,8 @@ jobs:
       - uses: infraway/create-dns-record@v2.0
         with:
           type: "CNAME"
-          name: "vpn.${{ env.VPNTESTWEBSERVER_USERNAME }}.${{ secrets.CLOUDFLARE_DOMAIN }}"
-          content: "${{ env.VPNTESTWEBSERVER_USERNAME }}.${{ secrets.CLOUDFLARE_DOMAIN }}"
+          name: "test.${{ env.VPSTESTWEBSERVER_USERNAME }}.${{ secrets.CLOUDFLARE_DOMAIN }}"
+          content: "${{ env.VPSTESTWEBSERVER_USERNAME }}.${{ secrets.CLOUDFLARE_DOMAIN }}"
           proxied: false
           token: ${{ secrets.CLOUDFLARE_TOKEN }}
           zone: ${{ secrets.CLOUDFLARE_ZONE }}

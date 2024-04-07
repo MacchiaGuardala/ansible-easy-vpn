@@ -1,0 +1,5 @@
+<VirtualHost *:80>
+    ServerName localhost
+    ProxyPass / http://{{ vpstest_host }}:{{ vpstest_port }}/
+    ProxyPassReverse / http://{{ vpstest_host }}:{{ vpstest_port }}/
+</VirtualHost>

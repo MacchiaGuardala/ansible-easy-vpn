@@ -37,7 +37,7 @@
         - fail2ban
 
     - role: vpstest
-      when: enable_vpntest_webserver | default(False)
+      when: enable_vpstest_webserver | default(False)
       tags:
         - vpstestwebserver
 
