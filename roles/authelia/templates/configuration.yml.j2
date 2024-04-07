@@ -34,6 +34,10 @@ access_control:
     - domain: {{ adguard_host }}
       policy: two_factor
 {% endif %}
+{% if enable_vpntest_webserver %}
+    - domain: {{ vpntest_host }}
+      policy: two_factor
+{% endif %}
 
 session:
   name: authelia_session

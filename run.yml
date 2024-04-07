@@ -36,6 +36,11 @@
       tags:
         - fail2ban
 
+    - role: vpstest
+      when: enable_vpntest_webserver | default(False)
+      tags:
+        - vpstestwebserver
+
     - role: dns
       when: enable_adguard_unbound_doh | default(False)
       tags:
